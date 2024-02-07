@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
@@ -58,7 +59,7 @@ fun MyApp() {
                 .height(100.dp) // Increase height as needed
         )
         Spacer(modifier = Modifier.height(16.dp)) // Spacing before button
-        Button(onClick = { /*TODO*/ }) {
+        Button(onClick = { /*TODO*/ }, shape = RoundedCornerShape(8.dp)) {
             Text(text = "Submit")
         }
     }
